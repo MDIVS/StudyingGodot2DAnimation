@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/objects/Character.tscn" type="PackedScene" id=1]
+
+[node name="Main" type="Node"]
+
+[node name="Character" parent="." instance=ExtResource( 1 )]
+position = Vector2( 416.47, 309.683 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 1003.46, 9.9149, 998.7, 581.379, 862.183, 575.03, 862.183, 576.617, 832.023, 528.995, 832.023, 528.995, 730.429, 524.233, 674.87, 575.03, 595.5, 562.33, 585.976, 519.471, 527.242, 505.184, 532.004, 568.68, 416.124, 568.68, 343.103, 516.296, 217.699, 551.219, 154.203, 524.233, 68.4829, 559.156, 24.0357, 38.4881, -25.1738, 24.2015, -29.936, 630.589, 1046.32, 617.889, 1047.91, 11.5023 )
